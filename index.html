@@ -1,1 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Digital | LexisHub Perú</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #0284c7;
+            --accent: #f59e0b;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --white: #ffffff;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Navegación */
+        header {
+            background-color: var(--primary);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            color: var(--white);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Secciones principales */
+        section {
+            padding: 5rem 2rem 3rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            scroll-margin-top: 60px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            text-align: center;
+            padding: 8rem 2rem 5rem 2rem;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero h2 { font-size: 1.3rem; font-weight: 400; opacity: 0.9; margin-bottom: 2rem; }
+
+        .team-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: inline-block;
+            text-align: left;
+            backdrop-filter: blur(5px);
+        }
+
+        .team-box ul { list-style: none; }
+        .team-box li { margin-bottom: 0.5rem; }
+
+        h2.section-title {
+            color: var(--primary);
+            font-size: 2rem;
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--secondary);
+        }
+
+        .card h3 { color: var(--primary); margin-bottom: 0.5rem; }
+
+        .case-study {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .case-study h3 { color: #dc2626; margin-bottom: 0.5rem; }
+        .case-study .solution { color: #16a34a; font-weight: bold; margin-top: 0.5rem; }
+
+        .badge {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">LexisHub Perú</div>
+            <ul class="nav-links">
+                <li><a href="#seccion1">Presentación</a></li>
+                <li><a href="#seccion2">Hub Tel Aviv</a></li>
+                <li><a href="#seccion3">Startups & Entorno</a></li>
+                <li><a href="#seccion4">Adaptación en Perú</a></li>
+                <li><a href="#seccion5">Reflexión & Citas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>LexisHub Perú</h1>
+        <h2>Análisis del Hub Tecnológico Tel Aviv y adaptación innovativa digital del sistema de justicia en el Perú</h2>
+        <div class="team-box">
+            <p><strong>Universidad César Vallejo</strong> | Facultad de Derecho y Ciencias Políticas</p>
+            <p><strong>Curso:</strong> Derecho, Ciclo II | <strong>Asesora:</strong> Dra. Milagros Luz Hidalgo Legoas</p>
+            <hr style="margin: 0.8rem 0; border: 0.5px solid rgba(255,255,255,0.2);">
+            <p><strong>Integrantes / Autores:</strong></p>
+            <ul>
+                <li>• ACUÑA HUANCA, Deybi Dominik (ORCID: 0009-0004-1091)</li>
+                <li>• ARANDA SÁNCHEZ, Dayana (ararandasa1@ucvvirtual.edu.pe)</li>
+                <li>• RUIZ MELCHOR, Fanny (FRUIZME@UCVVIRTUAL.EDU.PE)</li>
+                <li>• SIMON HURTADO, Daniel Esteban (dasimonhu@ucvvirtual.edu.pe)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SECCIÓN 1 -->
+    <section id="seccion1">
+        <h2 class="section-title">1. Presentación de la Propuesta</h2>
+        <div class="card">
+            <p>El proyecto <strong>"LexisHub Perú"</strong> nace como propuesta a una problemática crítica en el Perú: frenar y disminuir los fraudes informáticos como la suplantación de identidad y las líneas telefónicas fraudulentas (ej. <em>"La Estafa Del DNI Duplicado"</em>).</p>
+            <br>
+            <p>La ineficiente interconexión digital entre el Ministerio Público, RENIEC, OSIPTEL y otras entidades genera pérdidas irreversibles en el patrimonio de la ciudadanía. Nuestra propuesta sustenta la articulación mediante:</p>
+            <br>
+            <ul>
+                <li><strong>LegalTech (Onomondo y CURIA):</strong> Previene el fraude desde el inicio mediante verificación biométrica y análisis digital previo.</li>
+                <li><strong>JusticeTech (CyberArk y JUSTINA):</strong> Rediseña la interconexión entre RENIEC, Ministerio Público, OSIPTEL y Poder Judicial / SIJ / Curia.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2 -->
+    <section id="seccion2">
+        <h2 class="section-title">2. Categorización y Factores de Éxito: Hub Tel Aviv</h2>
+        <p style="margin-bottom: 1.5rem;">Ubicada en Israel (Costa mediterránea), Tel Aviv es conocida mundialmente como la <strong>"Nación de las Startups"</strong>, destacando en ciberseguridad, identidad digital y tecnología aplicada a la justicia.</p>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3>Formación de Talento</h3>
+                <p>Jóvenes reciben formación tecnológica avanzada durante su servicio militar (unidades de defensa) y luego trasladan esa experiencia al sector civil creando empresas.</p>
+            </div>
+            <div class="card">
+                <h3>Cultura de Innovación</h3>
+                <p>Cuestionar y equivocarse se consideran aprendizaje, no un fracaso. Esto fomenta ideas audaces y transformadoras.</p>
+            </div>
+            <div class="card">
+                <h3>Inversión Pública y Privada</h3>
+                <p>El gobierno financia etapas iniciales de startups, sumado al capital internacional que impulsa un crecimiento acelerado.</p>
+            </div>
+            <div class="card">
+                <h3>Colaboración Intersectorial</h3>
+                <p>Trabajo estrecho entre el sector defensa, universidades, gobierno y empresas. Lo desarrollado para seguridad se adapta a soluciones civiles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3 -->
+    <section id="seccion3">
+        <h2 class="section-title">3. Startups Destacadas y Entorno Regulatorio</h2>
+        
+        <h3 style="margin-bottom: 1rem; color: var(--primary);">Startups del Ecosistema</h3>
+        <div class="card-grid" style="margin-bottom: 2rem;">
+            <div class="card">
+                <span class="badge">Ciberseguridad</span>
+                <h3>CyberArk</h3>
+                <p>Protege accesos privilegiados en empresas y gobiernos mediante la venta de licencias y suscripciones anuales.</p>
+            </div>
+            <div class="card">
+                <span class="badge">Identidad Digital</span>
+                <h3>Onomondo</h3>
+                <p>Confirma la identidad mediante datos biométricos sin compartir contraseñas. Licencia de uso a entidades financieras por verificación.</p>
+            </div>
+            <div class="card">
+                <span class="badge">Automotriz e IA</span>
+                <h3>Mobileye</h3>
+                <p>Previene accidentes de tránsito mediante inteligencia artificial y cámaras, vendiendo tecnología a fabricantes.</p>
+            </div>
+        </div>
+
+        <h3 style="margin-bottom: 1rem; color: var(--primary);">Entorno Regulatorio & Academia</h3>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Marco Legal</h3>
+                <p><strong>Ley de Protección de Datos (2018):</strong> Reglas claras sobre recolección y uso de datos. Tecnologías sensibles pasan controles de ciberseguridad e incentivos tributarios de I+D.</p>
+            </div>
+            <div class="card">
+                <h3>Centros de Investigación</h3>
+                <p>• <strong>Univ. de Tel Aviv:</strong> Excelencia en ciberseguridad.<br>• <strong>Inst. Weizmann:</strong> Transforma ciencia en productos.<br>• <strong>Univ. Hebrea de Jerusalén:</strong> Conecta la academia con el mercado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4 -->
+    <section id="seccion4">
+        <h2 class="section-title">4. Adaptación de Aportes al Sistema Peruano</h2>
+
+        <div class="case-study">
+            <h3>Caso A: Suplantación de Identidad ("La Estafa del DNI Duplicado")</h3>
+            <p><strong>Problema Actual:</strong> Víctimas sufren suplantación bancaria; la atención manual en distintos bancos toma hasta 4 meses con riesgo de archivamiento.</p>
+            <p class="solution"><strong>Aporte Tecnológico (Onomondo):</strong> Verificación biométrica inmediata de rostro/huella sin DNI físico. Permite la denuncia automática y el bloqueo de cuentas de inmediato.</p>
+            <p><small><strong>Entidades Vinculadas:</strong> RENIEC, SUNAT, Ministerio Público, SBS.</small></p>
+        </div>
+
+        <div class="case-study">
+            <h3>Caso B: Líneas Telefónicas Fraudulentas</h3>
+            <p><strong>Problema Actual:</strong> Cobro indebido de deudas telefónicas por líneas jamás solicitadas (ej. más de S/ 1,200 en deudas).</p>
+            <p class="solution"><strong>Aporte Tecnológico (Report SG):</strong> Plataforma centralizada donde una sola alerta notifica en tiempo real a todas las instituciones. La respuesta pasa de meses a solo horas.</p>
+            <p><small><strong>Entidades Vinculadas:</strong> OSIPTEL, SBS, RENIEC, Ministerio Público.</small></p>
+        </div>
+
+        <div class="case-study">
+            <h3>Caso C: Estafas por Llamadas y Mensajes Fraudulentos</h3>
+            <p><strong>Problema Actual:</strong> Llamadas extorsivas o de falsas emergencias familiares para transferir dinero rápidamente.</p>
+            <p class="solution"><strong>Aporte Tecnológico (Rocket Lawyer):</strong> Plataforma de trazabilidad. Congela y rastrea la operación en minutos durante el tránsito del dinero, bloqueando la cuenta receptora.</p>
+            <p><small><strong>Entidades Vinculadas:</strong> Ministerio Público, Poder Judicial, RENIEC, SUNARP, SBS.</small></p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5 -->
+    <section id="seccion5">
+        <h2 class="section-title">5. Reflexión Final y Referencias</h2>
+
+        <div class="card" style="margin-bottom: 2rem; background: #eff6ff;">
+            <h3>Reflexión sobre el Futuro</h3>
+            <p>El modelo de Tel Aviv demuestra que no se requiere abundancia de recursos naturales para avanzar, sino invertir en el talento humano. En el Perú, el camino no es copiar exactamente el modelo israelí, sino adaptar su esencia: formar especialistas, conectar instituciones que hoy no dialogan y entender que la tecnología es una aliada para proteger derechos. El verdadero progreso digital ocurre cuando la innovación se acompaña de justicia y accesibilidad para todos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Referencias Bibliográficas</h3>
+            <ol style="margin-left: 1.2rem;">
+                <li>Señor, D., & Singer, S. (2009). <em>Start-Up Nation: La historia del milagro económico de Israel</em>. PublicAffairs.</li>
+                <li>IATI, Israel Advanced Technology Industries. (2024). <em>Informe anual del ecosistema tecnológico israelí</em>.</li>
+                <li>Ministerio Público, Fiscalía de la Nación. (2024). <em>Delitos informáticos en el Perú: Estadísticas 2017-2024</em>.</li>
+                <li>Banco Mundial. (2023). <em>Ecosistemas de innovación y ciberseguridad. Lecciones para países en desarrollo</em>.</li>
+                <li>Autoridad de Protección de Datos de Israel. (2018). <em>Ley de Protección de Datos de Israel</em>.</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 LexisHub Perú - Escuela Profesional de Derecho | Universidad César Vallejo</p>
